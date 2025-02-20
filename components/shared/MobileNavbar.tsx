@@ -21,7 +21,7 @@ export function MobileNavbar() {
 						alt={"Menu Icon"}
 						width={1000}
 						height={1000}
-						className="w-[30px] h-[30px] "
+						className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] "
 					/>
 				</Button>
 			</SheetTrigger>
