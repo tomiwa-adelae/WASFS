@@ -190,7 +190,7 @@ export const contactDetails = [
 		details: [
 			{ detail: "123 Forensic Lane, Victoria Island, Lagos, Nigeria" },
 		],
-		name: "Location",
+		name: "location",
 	},
 	{
 		icon: "/assets/icons/email.svg",
@@ -199,7 +199,7 @@ export const contactDetails = [
 			{ detail: "info@wasfs.com (General inquiries)" },
 			{ detail: "support@wasfs.com (Technical support)" },
 		],
-		name: "Email",
+		name: "email",
 	},
 	{
 		icon: "/assets/icons/call.svg",
@@ -208,6 +208,6 @@ export const contactDetails = [
 			{ detail: "+234 123 456 7890 (Main Line)" },
 			{ detail: "+234 987 654 3210 (WhatsApp Support)" },
 		],
-		name: "Phone",
+		name: "phone",
 	},
 ];

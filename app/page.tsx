@@ -5,6 +5,7 @@ import WhyWASFS from "@/components/WhyWASFS";
 import Testimonials from "@/components/Testimonials";
 import SectionHeader from "@/components/shared/SectionHeader";
 import ContactDetails from "@/components/ContactDetails";
+import ContactForm from "@/components/ContactForm";
 
 const page = () => {
 	return (
@@ -22,8 +23,9 @@ const page = () => {
 						"Our team is ready to assist you with enrollment, course information, and any other inquiries. Contact us today!"
 					}
 				/>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 container pt-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 container pt-8">
 					<ContactDetails />
+					<ContactForm />
 				</div>
 			</div>
 		</div>
