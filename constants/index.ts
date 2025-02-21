@@ -211,3 +211,71 @@ export const contactDetails = [
 		name: "phone",
 	},
 ];
+
+export const subjects = [
+	"Admissions",
+	"General Inquiry",
+	"Technical Support",
+	"Other",
+];
+
+export const socialLinks = [
+	{
+		name: "Facebook",
+		icon: "/assets/icons/facebook.svg",
+		slug: "facebook.com",
+	},
+	{
+		name: "Instagram",
+		icon: "/assets/icons/instagram.svg",
+		slug: "instagram.com",
+	},
+	{
+		name: "Linkedin",
+		icon: "/assets/icons/linkedin.svg",
+		slug: "linkedin.com",
+	},
+];
+
+export const footerLinks = [
+	{
+		links: [
+			{
+				title: "About WASFS",
+				slug: "/about",
+			},
+			{
+				title: "Programs & Certification",
+				slug: "/our-programs",
+			},
+			{
+				title: "Admissions",
+				slug: "/admissions",
+			},
+			{
+				title: "Contact us",
+				slug: "/contact",
+			},
+			{
+				title: "FAQs",
+				slug: "/contact/#faqs",
+			},
+		],
+	},
+	{
+		links: [
+			{
+				title: "Privacy Policy",
+				slug: "/privacy-policy",
+			},
+			{
+				title: "Terms & Conditions",
+				slug: "/terms-conditions",
+			},
+			{
+				title: "Refund & Cancellation Policy",
+				slug: "/refunds",
+			},
+		],
+	},
+];

@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import {
 	Form,
 	FormControl,
-	FormDescription,
 	FormField,
 	FormItem,
 	FormLabel,
@@ -17,41 +16,50 @@ import {
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
 import "react-phone-number-input/style.css";
-import PhoneInput from "react-phone-number-input";
-import { useState } from "react";
+import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
+import {
+	Select,
+	SelectContent,
+	SelectItem,
+	SelectTrigger,
+	SelectValue,
+} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 
+import { useState } from "react";
+import { subjects } from "@/constants";
+
+// Define Zod Schema with phone number validation
 const FormSchema = z.object({
-	name: z.string().min(2, {
-		message: "Name must be at least 2 characters.",
-	}),
+	name: z.string().min(2, { message: "Name must be at least 2 characters." }),
 	email: z
-		.string({
-			required_error: "Email is required.",
-		})
-		.email(),
+		.string({ required_error: "Email is required." })
+		.email("Invalid email address."),
+	phone: z.string().refine(isValidPhoneNumber, {
+		message: "Invalid phone number",
+	}),
+	subject: z.string({
+		required_error: "Please select a subject.",
+	}),
+	message: z.string().min(10, {
+		message: "Message must be at least 10 characters.",
+	}),
 });
 
 const ContactForm = () => {
-	const [value, setValue] = useState();
+	const [value, setValue] = useState<string | undefined>(undefined);
 
 	const form = useForm<z.infer<typeof FormSchema>>({
 		resolver: zodResolver(FormSchema),
 		defaultValues: {
 			name: "",
+			email: "",
+			phone: "",
 		},
 	});
 
 	function onSubmit(data: z.infer<typeof FormSchema>) {
-		toast({
-			title: "You submitted the following values:",
-			description: (
-				<pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-					<code className="text-white">
-						{JSON.stringify(data, null, 2)}
-					</code>
-				</pre>
-			),
-		});
+		console.log(data);
 	}
 
 	return (
@@ -95,13 +103,78 @@ const ContactForm = () => {
 							)}
 						/>
 					</div>
-					<PhoneInput
-						placeholder="Enter phone number"
-						value={value}
-						onChange={(e) => setValue(e.target.value)}
-						defaultCountry="NG"
-						className="flex h-14 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 sm:text-sm"
+
+					<FormField
+						control={form.control}
+						name="phone"
+						render={({ field }) => (
+							<FormItem>
+								<FormLabel>Phone Number</FormLabel>
+								<FormControl>
+									<PhoneInput
+										placeholder="Enter phone number"
+										value={value}
+										onChange={(phone) => {
+											setValue(phone);
+											field.onChange(phone); // Ensure form gets updated
+										}}
+										defaultCountry="NG"
+										className="flex h-14 w-full rounded-md border border-input bg-background px-3 py-2 text-base sm:text-sm"
+									/>
+								</FormControl>
+								<FormMessage />
+							</FormItem>
+						)}
 					/>
+					<FormField
+						control={form.control}
+						name="subject"
+						render={({ field }) => (
+							<FormItem>
+								<FormLabel>Subject</FormLabel>
+								<Select
+									onValueChange={field.onChange}
+									defaultValue={field.value}
+								>
+									<FormControl>
+										<SelectTrigger>
+											<SelectValue placeholder="Select a subject" />
+										</SelectTrigger>
+									</FormControl>
+									<SelectContent>
+										{subjects.map((subject, index) => (
+											<SelectItem
+												key={index}
+												value={subject}
+											>
+												{subject}
+											</SelectItem>
+										))}
+									</SelectContent>
+								</Select>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
+
+					<FormField
+						control={form.control}
+						name="message"
+						render={({ field }) => (
+							<FormItem>
+								<FormLabel>Message</FormLabel>
+								<FormControl>
+									<Textarea
+										placeholder="We are happy to hear your inquiries..."
+										className="resize-none"
+										{...field}
+									/>
+								</FormControl>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
+
 					<Button className="w-full" size={"lg"} type="submit">
 						Send message
 					</Button>
