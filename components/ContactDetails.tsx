@@ -1,6 +1,5 @@
 import { contactDetails, socialLinks } from "@/constants";
 import Image from "next/image";
-import React from "react";
 
 const ContactDetails = () => {
 	return (
