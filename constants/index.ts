@@ -27,6 +27,22 @@ export const wasfsCredibility = [
 	"Partnered with Precious Cornerstone University for professional training.",
 ];
 
+export const whoWeServe = [
+	"Forensic Accountants & Auditors",
+	"Law Enforcement & Security Personnel",
+	"Cybersecurity Experts & IT Professionals",
+	"Students & Aspiring Forensic Professionals",
+];
+
+export const coreValues = [
+	" Integrity & Ethics: Committed to truth and ethical investigation.",
+	"Excellence in Education: Delivering top-tier forensic education.",
+	"Innovation: Using modern tools and techniques in forensic studies.",
+	"Professionalism: Training skilled and responsible forensic experts.",
+	"Lifelong Learning: Continuous knowledge improvement for students.",
+	"Collaboration & Global Recognition",
+];
+
 export const whyWASFS = [
 	{
 		icon: "/assets/icons/certificate.svg",
@@ -277,5 +293,23 @@ export const footerLinks = [
 				slug: "/refunds",
 			},
 		],
+	},
+];
+
+export const faculties = [
+	{
+		image: "/assets/images/tomiwa-adelae.jfif",
+		name: "Tomiwa Adelae",
+		portfolio: "Forensic Accounting & Fraud Investigation Expert.",
+	},
+	{
+		image: "/assets/images/tomiwa-adelae.jfif",
+		name: "Shade Akinteye",
+		portfolio: "Cybercrime & Digital Forensics Specialist.",
+	},
+	{
+		image: "/assets/images/tomiwa-adelae.jfif",
+		name: "Kemi Akinteye",
+		portfolio: "Criminal Investigation & Legal Framework Instructor.",
 	},
 ];

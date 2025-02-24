@@ -57,9 +57,9 @@ const ContactDetails = () => {
 							height={1000}
 							className="w-[20px] h-[20px]"
 						/>
-						<a className="text-xs uppercase font-medium group-hover:text-primary transition-all">
+						<p className="text-xs uppercase font-medium group-hover:text-primary transition-all">
 							{name}
-						</a>
+						</p>
 					</a>
 				))}
 			</div>

@@ -48,8 +48,8 @@ const SectionHeader = ({
 				{title}
 			</h2>
 			<p
-				className={`leading-loose lg:w-5/6 ${
-					position === "center" && "mx-auto"
+				className={`leading-loose ${
+					position === "center" && "mx-auto lg:w-5/6"
 				} text-sm lg:text-base lg:leading-loose`}
 			>
 				{description}
