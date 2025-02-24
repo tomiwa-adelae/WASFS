@@ -158,42 +158,42 @@ export const testimonies = [
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jfif",
+		image: "/assets/images/tomiwa-adelae.jpg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jfif",
+		image: "/assets/images/tomiwa-adelae.jpg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jfif",
+		image: "/assets/images/tomiwa-adelae.jpg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jfif",
+		image: "/assets/images/tomiwa-adelae.jpg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jfif",
+		image: "/assets/images/tomiwa-adelae.jpg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jfif",
+		image: "/assets/images/tomiwa-adelae.jpg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
@@ -298,17 +298,17 @@ export const footerLinks = [
 
 export const faculties = [
 	{
-		image: "/assets/images/tomiwa-adelae.jfif",
+		image: "/assets/images/tomiwa-adelae.jpg",
 		name: "Tomiwa Adelae",
 		portfolio: "Forensic Accounting & Fraud Investigation Expert.",
 	},
 	{
-		image: "/assets/images/tomiwa-adelae.jfif",
+		image: "/assets/images/tomiwa-adelae.jpg",
 		name: "Shade Akinteye",
 		portfolio: "Cybercrime & Digital Forensics Specialist.",
 	},
 	{
-		image: "/assets/images/tomiwa-adelae.jfif",
+		image: "/assets/images/tomiwa-adelae.jpg",
 		name: "Kemi Akinteye",
 		portfolio: "Criminal Investigation & Legal Framework Instructor.",
 	},
