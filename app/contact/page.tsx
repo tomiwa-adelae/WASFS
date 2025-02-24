@@ -1,6 +1,11 @@
 import ContactDetails from "@/components/ContactDetails";
 import ContactForm from "@/components/ContactForm";
-import React from "react";
+import FAQs from "@/components/FAQs";
+import dynamic from "next/dynamic";
+
+const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
+	ssr: false,
+});
 
 const page = () => {
 	return (
@@ -14,10 +19,12 @@ const page = () => {
 					support? Contact our team, and we'll be happy to assist you.
 				</p>
 			</div>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 container pt-16">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 container py-16">
 				<ContactDetails />
 				<ContactForm />
 			</div>
+			<LeafletMap />
+			<FAQs />
 		</div>
 	);
 };

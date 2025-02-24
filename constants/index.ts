@@ -313,3 +313,35 @@ export const faculties = [
 		portfolio: "Criminal Investigation & Legal Framework Instructor.",
 	},
 ];
+
+export const faqs = [
+	{
+		question:
+			"What is the West African School of Forensic Studies (WASFS)?",
+		answer: " WASFS is a leading institution that provides professional forensic training in fraud auditing, digital forensics, and criminal investigations. We offer online, globally recognized certifications for professionals and students.",
+	},
+	{
+		question: "Are WASFS certifications recognized internationally?",
+		answer: "Yes, WASFS is accredited by the International Institute of Certified Forensic Investigation Professionals (IICFIP), USA, ensuring our certifications are globally accepted.",
+	},
+	{
+		question: "How do I apply for a program?",
+		answer: "You can apply online by visiting our Application Page. Simply fill out the form, submit your documents, and make the required payment.",
+	},
+	{
+		question: "What are the admission requirements?",
+		answer: "Most programs require a minimum of a high school diploma or equivalent. Some advanced courses may require prior experience in forensic investigations, accounting, or law enforcement.",
+	},
+	{
+		question: "How much do courses cost?",
+		answer: "Tuition fees vary by program. Please visit our Tuition Fees Page for detailed pricing information.",
+	},
+	{
+		question: "Do you offer payment plans?",
+		answer: "Yes, flexible payment options are available for select programs. Contact our admissions office for more details.",
+	},
+	{
+		question: "What payment methods do you accept?",
+		answer: "We accept payments via bank transfer, credit/debit cards, PayPal, and mobile money.",
+	},
+];
