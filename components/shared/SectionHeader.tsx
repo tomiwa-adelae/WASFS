@@ -19,27 +19,31 @@ const SectionHeader = ({
 				position === "center" ? "text-center" : "text-left"
 			} ${color === "black" ? "text-black" : "text-white"}`}
 		>
-			<div
-				className={`flex items-center ${
-					position === "center" ? "justify-center" : "justify-start"
-				} uppercase text-sm lg:text-base gap-2 ${
-					color === "black" ? "text-primary" : "text-white"
-				} font-medium`}
-			>
-				{position === "center" && (
+			{subTitle && (
+				<div
+					className={`flex items-center ${
+						position === "center"
+							? "justify-center"
+							: "justify-start"
+					} uppercase text-sm lg:text-base gap-2 ${
+						color === "black" ? "text-primary" : "text-white"
+					} font-medium`}
+				>
+					{position === "center" && (
+						<div
+							className={`h-0.5 w-16 ${
+								color === "black" ? "bg-primary" : "bg-white"
+							}`}
+						/>
+					)}
+					<h4>{subTitle}</h4>
 					<div
 						className={`h-0.5 w-16 ${
 							color === "black" ? "bg-primary" : "bg-white"
 						}`}
 					/>
-				)}
-				<h4>{subTitle}</h4>
-				<div
-					className={`h-0.5 w-16 ${
-						color === "black" ? "bg-primary" : "bg-white"
-					}`}
-				/>
-			</div>
+				</div>
+			)}
 			<h2
 				className={`${
 					color === "black" ? "text-blue-400" : "text-white"

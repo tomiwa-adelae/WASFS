@@ -22,9 +22,9 @@ const Showcase = ({
 			style={{
 				backgroundImage: `url(${image})`,
 			}}
-			className="min-h-screen text-white bg-no-repeat bg-center bg-cover bg-current flex items-center justify-start"
+			className="min-h-screen relative text-white bg-no-repeat bg-center bg-cover bg-current flex items-center justify-start"
 		>
-			<div className="container pt-40 pb-10">
+			<div className="container pt-40 pb-10 z-10">
 				<h1 className="uppercase text-4xl leading-relaxed md:text-5xl md:leading-relaxed lg:text-6xl lg:leading-normal font-bold lg:w-5/6">
 					{title}
 				</h1>
@@ -36,6 +36,7 @@ const Showcase = ({
 				</div>
 				{extras}
 			</div>
+			<div className="absolute top-0 bottom-0 left-0 right-0 inset-0 bg-black/50 transition-all duration-1000 h-full" />
 		</div>
 	);
 };

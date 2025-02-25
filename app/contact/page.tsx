@@ -1,5 +1,5 @@
 import ContactDetails from "@/components/ContactDetails";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/forms/ContactForm";
 import FAQs from "@/components/FAQs";
 import dynamic from "next/dynamic";
 

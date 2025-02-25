@@ -5,7 +5,7 @@ import WhyWASFS from "@/components/WhyWASFS";
 import Testimonials from "@/components/Testimonials";
 import SectionHeader from "@/components/shared/SectionHeader";
 import ContactDetails from "@/components/ContactDetails";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/forms/ContactForm";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { wasfsCredibility } from "@/constants";

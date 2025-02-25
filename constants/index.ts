@@ -12,7 +12,7 @@ export const navLinks = [
 		title: "Our Programs",
 	},
 	{
-		slug: "/admission",
+		slug: "/admissions",
 		title: "Admissions",
 	},
 	{
@@ -158,42 +158,42 @@ export const testimonies = [
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jpg",
+		image: "/assets/images/tomiwa-adelae.jpeg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jpg",
+		image: "/assets/images/tomiwa-adelae.jpeg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jpg",
+		image: "/assets/images/tomiwa-adelae.jpeg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jpg",
+		image: "/assets/images/tomiwa-adelae.jpeg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jpg",
+		image: "/assets/images/tomiwa-adelae.jpeg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
 	{
 		name: "Tomiwa Adelae",
 		portfolio: "Certified Fraud Auditor",
-		image: "/assets/images/tomiwa-adelae.jpg",
+		image: "/assets/images/tomiwa-adelae.jpeg",
 		testimony:
 			"The Fraud Auditing & Forensic Accounting course at WASFS gave me the skills to detect financial fraud in my organization. The case studies were real-world applicable, and I landed a senior role at a global accounting firm.",
 	},
@@ -233,6 +233,17 @@ export const subjects = [
 	"General Inquiry",
 	"Technical Support",
 	"Other",
+];
+
+export const countries = ["Nigeria", "Ghana", "Canada", "India"];
+export const educationLevels = [
+	"High School Diploma / Secondary School Certificate",
+	"Diploma / Associate Degree",
+	"Bachelor’s Degree",
+	"Postgraduate Diploma (PGD)",
+	"Master’s Degree (MSc, MA, MBA, etc.)",
+	"Doctorate / PhD",
+	"Professional Certification (e.g., ACCA, CFA, CFE, IICFIP, etc.)",
 ];
 
 export const socialLinks = [
@@ -298,17 +309,17 @@ export const footerLinks = [
 
 export const faculties = [
 	{
-		image: "/assets/images/tomiwa-adelae.jpg",
+		image: "/assets/images/tomiwa-adelae.jpeg",
 		name: "Tomiwa Adelae",
 		portfolio: "Forensic Accounting & Fraud Investigation Expert.",
 	},
 	{
-		image: "/assets/images/tomiwa-adelae.jpg",
+		image: "/assets/images/tomiwa-adelae.jpeg",
 		name: "Shade Akinteye",
 		portfolio: "Cybercrime & Digital Forensics Specialist.",
 	},
 	{
-		image: "/assets/images/tomiwa-adelae.jpg",
+		image: "/assets/images/tomiwa-adelae.jpeg",
 		name: "Kemi Akinteye",
 		portfolio: "Criminal Investigation & Legal Framework Instructor.",
 	},
@@ -344,4 +355,127 @@ export const faqs = [
 		question: "What payment methods do you accept?",
 		answer: "We accept payments via bank transfer, credit/debit cards, PayPal, and mobile money.",
 	},
+];
+
+export const categories = [
+	{ name: "Executive Certifications" },
+	{ name: "Diploma Programs" },
+	{ name: "Certificate Programs" },
+];
+
+export const courseOverview = [
+	{
+		name: "Duration",
+		icon: "/assets/icons/calendar.svg",
+		details: "90 Days(Self-Paced)",
+	},
+	{
+		name: "Mode of Study",
+		icon: "/assets/icons/laptop.svg",
+		details: "100% Online (Moodle LMS)",
+	},
+	{
+		name: "Certification",
+		icon: "/assets/icons/graduation-cap.svg",
+		details: "Accredited by IICFIP USA",
+	},
+	{
+		name: "Course Level",
+		icon: "/assets/icons/scroll.svg",
+		details: "Beginner to Advanced",
+	},
+	{
+		name: "Tuition Fees",
+		icon: "/assets/icons/money-bag.svg",
+		details: "$500 (Flexible Payment Options Available)",
+	},
+];
+
+export const courseAudience = [
+	{
+		name: "Auditors & Accountants",
+		details: "Detect fraudulent financial activities.",
+	},
+	{
+		name: "Financial Crime Investigators",
+		details: "Investigate corporate fraud.",
+	},
+	{
+		name: "Legal & Compliance Officers",
+		details: "Ensure financial integrity.",
+	},
+	{
+		name: "Students & Graduates",
+		details: "Kickstart a career in forensic accounting.",
+	},
+];
+
+export const courseCurriculum = [
+	{
+		module: "1",
+		details: "Introduction the basic principles of Accounting",
+	},
+	{
+		module: "2",
+		details: "The World of Business and Accounting",
+	},
+	{
+		module: "3",
+		details: "Business Transactions and the Accounting Equation",
+	},
+	{
+		module: "4",
+		details:
+			"Transactions that Affect Assets, Liabilities, and Owner’s Equity",
+	},
+	{
+		module: "5",
+		details: "Transactions that Affect Revenue, Expenses, and Withdrawals",
+	},
+	{
+		module: "6",
+		details: "Recording Transactions in a General Journal",
+	},
+	{
+		module: "7",
+		details: " Posting Journal Entries to a General Journal",
+	},
+	{
+		module: "8",
+		details: "The Six-Column Worksheet",
+	},
+	{
+		module: "9",
+		details: "Financial Statements for a government entity",
+	},
+	{
+		module: "10",
+		details: "Cash Control and Banking Activities",
+	},
+];
+
+export const coursePaymentOptions = [
+	"One-time full payment ($500)",
+	"Installment Plan: $250 upfront + 2 monthly payments of $125",
+];
+
+export const paymentMethods = [
+	{
+		icon: "/assets/icons/mastercards.svg",
+		method: "Credit/Debit Card (Visa, MasterCard, American Express)",
+	},
+	{
+		icon: "/assets/icons/bank-transfer.svg",
+		method: "Bank Transfer (Details provided upon request)",
+	},
+	{
+		icon: "/assets/icons/paypal.svg",
+		method: "PayPal (For international students)",
+	},
+];
+
+export const refundGuidelines = [
+	"Full Refund: Within 7 days of enrollment if no course materials have been accessed.",
+	"Partial Refund: Within 14 days with a 30% deduction.",
+	"No Refund: After accessing 50% of the course content.",
 ];

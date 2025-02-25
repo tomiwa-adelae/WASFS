@@ -7,7 +7,7 @@ import { whyWASFS } from "@/constants";
 
 const WhyWASFS = () => {
 	return (
-		<div className="bg-primary text-white grid grid-cols-1 md:grid-cols-2 md:gap-4">
+		<div className="bg-primary text-white grid grid-cols-1 md:grid-cols-2 md:gap-4 overflow-hidden">
 			<div className="flex items-center justify-center flex-col py-12 lg:py-16">
 				<SectionHeader
 					title={"Your Gateway to a Successful Forensic Career!"}
@@ -48,7 +48,7 @@ const WhyWASFS = () => {
 				alt={"Magnifying glass over an analytics"}
 				width={1000}
 				height={1000}
-				className="aspect-video md:aspect-square w-auto h-full object-cover"
+				className="aspect-video md:aspect-square w-auto h-full object-cover hover:scale-105 transition-all"
 			/>
 		</div>
 	);
