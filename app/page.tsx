@@ -18,7 +18,7 @@ const page = () => {
 				title={
 					<>
 						Learn, Certify and{" "}
-						<span className="text-primary">Advance</span> Your
+						<span className="text-primary">Advance</span> your
 						Career
 					</>
 				}
