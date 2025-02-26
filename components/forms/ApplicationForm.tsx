@@ -39,6 +39,7 @@ import {
 import { cn } from "@/lib/utils";
 import { Checkbox } from "@/components/ui/checkbox";
 import { DesiredPrograms } from "../DesiredPrograms";
+import { Suspense } from "react";
 
 // Define Zod Schema with phone number validation
 const FormSchema = z.object({
@@ -251,7 +252,9 @@ const ApplicationForm = () => {
 							</FormItem>
 						)}
 					/>
-					<DesiredPrograms />
+					<Suspense fallback={<p>...</p>}>
+						<DesiredPrograms />
+					</Suspense>
 					<FormField
 						control={form.control}
 						name="education"
