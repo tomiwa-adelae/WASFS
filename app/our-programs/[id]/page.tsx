@@ -5,6 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Accredited Forensic Certification | WASFS",
+	description:
+		" Enroll in programs at WASFS and gain industry-recognized forensic expertise in [course focus]. Learn from experts and get certified in forensic science.",
+	keywords:
+		"forensic certification, forensic accounting diploma, fraud auditing course, cybercrime investigation certification, forensic investigation training, wasfs, prof akinteye ademola, ademola, akinteye, simon akinteye, about",
+};
+
 const page = () => {
 	return (
 		<div>

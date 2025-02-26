@@ -14,7 +14,7 @@ const Testimonials = () => {
 					"Our students have gone on to secure jobs in law enforcement, financial institutions, and investigative agencies worldwide. Read their inspiring stories!"
 				}
 			/>
-			<div className="relative overflow-x-hidden w-full pb-40 h-full pt-14">
+			<div className="relative overflow-x-hidden w-full pb-36 lg:pb-20 h-full pt-14">
 				<Carousel slides={testimonies} />
 			</div>
 		</div>

@@ -250,17 +250,17 @@ export const socialLinks = [
 	{
 		name: "Facebook",
 		icon: "/assets/icons/facebook.svg",
-		slug: "facebook.com",
+		slug: "https://facebook.com",
 	},
 	{
 		name: "Instagram",
 		icon: "/assets/icons/instagram.svg",
-		slug: "instagram.com",
+		slug: "https://instagram.com",
 	},
 	{
 		name: "Linkedin",
 		icon: "/assets/icons/linkedin.svg",
-		slug: "linkedin.com",
+		slug: "https://linkedin.com",
 	},
 ];
 

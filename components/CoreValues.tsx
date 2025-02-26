@@ -5,7 +5,7 @@ import Image from "next/image";
 const CoreValues = () => {
 	return (
 		<div className="bg-white grid grid-cols-1 md:grid-cols-5 overflow-hidden">
-			<div className="flex items-center justify-center flex-col py-16 col-span-3">
+			<div className="flex items-center justify-center flex-col pt-16 md:py-16 col-span-3">
 				<SectionHeader
 					title={"Our Core Values"}
 					subTitle={"The Pillars of WASFS"}
@@ -41,7 +41,7 @@ const CoreValues = () => {
 				}
 				width={1000}
 				height={1000}
-				className="aspect-auto w-auto h-full object-cover col-span-2 hover:scale-105 transition-all"
+				className="hidden md:block aspect-auto w-auto h-full object-cover col-span-2 hover:scale-105 transition-all"
 			/>
 		</div>
 	);

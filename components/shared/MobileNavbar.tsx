@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
 	Sheet,
@@ -9,9 +11,13 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from "@/components/ui/sheet";
+import { navLinks } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function MobileNavbar() {
+	const pathname = usePathname();
 	return (
 		<Sheet>
 			<SheetTrigger asChild>
@@ -26,19 +32,30 @@ export function MobileNavbar() {
 				</Button>
 			</SheetTrigger>
 			<SheetContent>
-				<SheetHeader>
-					<SheetTitle>Edit profile</SheetTitle>
-					<SheetDescription>
-						Make changes to your profile here. Click save when
-						you're done.
-					</SheetDescription>
-				</SheetHeader>
-				<div className="grid gap-4 py-4"></div>
-				<SheetFooter>
-					<SheetClose asChild>
-						<Button type="submit">Save changes</Button>
-					</SheetClose>
-				</SheetFooter>
+				<nav className="flex flex-col font-semibold gap-0.5 py-4 text-xs uppercase">
+					{navLinks.map(({ title, slug }, index) => {
+						const isActive =
+							pathname === slug ||
+							pathname.startsWith(`${slug}/`);
+
+						return (
+							<SheetClose
+								asChild
+								key={index}
+								className="p-3.5 hover:bg-orange-50 hover:text-primary transition-all ease-out"
+							>
+								<Link
+									href={slug}
+									className={`flex items-center gap-3 justify-start ${
+										isActive && "text-primary"
+									}`}
+								>
+									<p>{title}</p>
+								</Link>
+							</SheetClose>
+						);
+					})}
+				</nav>
 			</SheetContent>
 		</Sheet>
 	);

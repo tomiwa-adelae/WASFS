@@ -7,6 +7,16 @@ const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
 	ssr: false,
 });
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Contact WASFS | Get in Touch for Forensic Training & Support",
+	description:
+		"Need help? Contact the West African School of Forensic Studies (WASFS) for inquiries about programs, enrollment, and support. Reach us via email, phone, or chat.",
+	keywords:
+		"contact WASFS, forensic training support, forensic certification inquiries, forensic course assistance, WASFS admissions contact, wasfs, prof akinteye ademola, ademola, akinteye, simon akinteye, about",
+};
+
 const page = () => {
 	return (
 		<div className="mt-16">

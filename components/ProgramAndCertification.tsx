@@ -17,7 +17,7 @@ const ProgramAndCertification = () => {
 			<div className="mt-8">
 				<Programs />
 			</div>
-			<div className="flex items-center justify-center gap-4 md:gap-8 mt-10">
+			<div className="container flex items-center justify-center gap-4 md:gap-8 mt-10">
 				<Button className="w-full md:w-auto" size={"lg"} asChild>
 					<Link href="/admissions">Apply now</Link>
 				</Button>

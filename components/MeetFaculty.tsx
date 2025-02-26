@@ -17,8 +17,8 @@ const MeetFaculty = () => {
 				<div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center">
 					{faculties.map(({ image, name, portfolio }, index) => (
 						<div
-							className={`relative rounded-3xl bg-white shadow-lg py-14 px-8 ${
-								index + 1 === 2 && "lg:scale-110"
+							className={`relative rounded-3xl bg-white shadow-lg py-14 px-8 max-w-[350px] ${
+								index + 1 === 2 && "lg:scale-110 col-span-1"
 							} ${
 								index + 1 === 3 &&
 								"col-span-1 md:col-span-2 lg:col-span-1"
@@ -35,7 +35,7 @@ const MeetFaculty = () => {
 								inactiveZone={0.01}
 							/>
 							<div
-								className={`flex items-center justify-center flex-col text-center w-full max-w-[350px] mx-auto`}
+								className={`flex items-center justify-center flex-col text-center mx-auto`}
 							>
 								<Image
 									src={image}

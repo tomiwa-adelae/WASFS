@@ -7,6 +7,16 @@ import { Button } from "@/components/ui/button";
 import WhyChooseWASFS from "@/components/WhyChooseWASFS";
 import Link from "next/link";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Forensic Training Programs & Certifications | WASFS Courses",
+	description:
+		"Explore WASFS forensic training programs, including forensic accounting, criminal investigations, digital forensics, and fraud auditing. Enroll today in accredited forensic courses.",
+	keywords:
+		"forensic programs, forensic certifications, forensic courses online, digital forensics training, fraud auditing certification, cybercrime investigation courses, forensic science education, forensic diploma, IICFIP accredited training, wasfs, prof akinteye ademola, ademola, akinteye, simon akinteye, about",
+};
+
 const page = () => {
 	return (
 		<div>

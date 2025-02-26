@@ -2,7 +2,16 @@ import CourseTuition from "@/components/CourseTuition";
 import FAQs from "@/components/FAQs";
 import ApplicationForm from "@/components/forms/ApplicationForm";
 import { Separator } from "@/components/ui/separator";
-import React from "react";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Admissions | Apply for Forensic Training at WASFS",
+	description:
+		"Apply to the West African School of Forensic Studies (WASFS) and start your journey in forensic auditing, digital forensics, and criminal investigations. Learn about admission requirements, deadlines, and how to enroll today.",
+	keywords:
+		"WASFS admissions, forensic training admission, apply to forensic program, forensic certification enrollment, forensic studies requirements, forensic course registration, online forensic training, forensic degree admission, forensic audit school application, how to enroll in forensic studies, wasfs, prof akinteye ademola, ademola, akinteye, simon akinteye, about",
+};
 
 const page = () => {
 	return (

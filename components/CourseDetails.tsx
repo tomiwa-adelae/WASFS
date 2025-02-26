@@ -15,7 +15,7 @@ const CourseDetails = () => {
 	return (
 		<div className="bg-white py-16">
 			<div className="container">
-				<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed">
+				<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed mb-2">
 					Course overview 📚
 				</h2>
 				<p
@@ -53,7 +53,7 @@ const CourseDetails = () => {
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-4 container">
 				<div className="flex flex-col items-start justify-center">
 					<div>
-						<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed">
+						<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed mb-2">
 							Who Should Take This Course?🎯
 						</h2>
 						<p
@@ -91,7 +91,7 @@ const CourseDetails = () => {
 			</div>
 			<Separator className="my-10 container" />
 			<div className="container">
-				<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed">
+				<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed mb-2">
 					What will you learn? 📖
 				</h2>
 				<p
@@ -127,7 +127,7 @@ const CourseDetails = () => {
 			<CourseTuition />
 			<Separator className="container my-10" />
 			<div className="container">
-				<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed">
+				<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed mb-2">
 					Refund Policy & Financial Assistance 🔄
 				</h2>
 				<p
@@ -169,7 +169,7 @@ const CourseDetails = () => {
 			</div>
 			<Separator className="container my-10" />
 			<div className="container">
-				<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed">
+				<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed mb-2">
 					Enroll now 🚀
 				</h2>
 				<p
