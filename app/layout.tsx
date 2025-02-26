@@ -31,6 +31,7 @@ export default function RootLayout({
 		<html lang="en">
 			<Head>
 				<meta property="og:image" content="/opengraph.png" />
+
 				<meta
 					property="og:image"
 					content="/assets/images/opengraph.png"
