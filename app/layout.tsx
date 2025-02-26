@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 	keywords:
 		"forensic studies, forensic training, digital forensics certification, fraud auditing courses, forensic science school, criminal investigations training, IICFIP certification, cybercrime investigation, forensic accounting diploma, wasfs, prof akinteye ademola, ademola, akinteye, simon akinteye",
 	openGraph: {
-		images: "/assets/images/opengraph-image.png",
+		images: "/assets/images/opengraph.png",
 	},
 	metadataBase: new URL("https://wasfs.vercel.app"),
 };
@@ -30,10 +30,10 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<Head>
-				<meta property="og:image" content="/opengraph-image.png" />
+				<meta property="og:image" content="/opengraph.png" />
 				<meta
 					property="og:image"
-					content="/assets/images/opengraph-image.png"
+					content="/assets/images/opengraph.png"
 				/>
 				<meta
 					name="viewport"
