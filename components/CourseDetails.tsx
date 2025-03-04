@@ -2,7 +2,6 @@ import Image from "next/image";
 import {
 	courseAudience,
 	courseCurriculum,
-	courseOverview,
 	refundGuidelines,
 } from "@/constants";
 import { Separator } from "./ui/separator";
@@ -11,7 +10,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import CourseTuition from "./CourseTuition";
 
-const CourseDetails = () => {
+const CourseDetails = ({ details }: any) => {
 	return (
 		<div className="bg-white py-16">
 			<div className="container">
@@ -29,29 +28,84 @@ const CourseDetails = () => {
 					frameworks.
 				</p>
 				<div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-					{courseOverview.map(({ icon, name, details }, index) => (
-						<div
-							key={index}
-							className="flex items-center justify-start gap-4"
-						>
-							<Image
-								src={icon}
-								alt={`${name}`}
-								width={1000}
-								height={1000}
-								className="w-[40px] h-[40px]"
-							/>
-							<p className="text-sm font-medium italic leading-relaxed">
-								<span className="text-blue-400">{name}: </span>
-								{details}
-							</p>
-						</div>
-					))}
+					<div className="flex items-center justify-start gap-4">
+						<Image
+							src={"/assets/icons/calendar.svg"}
+							alt={`Calendar Icon`}
+							width={1000}
+							height={1000}
+							className="w-[40px] h-[40px]"
+						/>
+						<p className="text-sm font-medium italic leading-relaxed">
+							<span className="text-blue-400">Duration: </span>
+							{details.duration}
+						</p>
+					</div>
+					<div className="flex items-center justify-start gap-4">
+						<Image
+							src={"/assets/icons/laptop.svg"}
+							alt={`Laptop Icon`}
+							width={1000}
+							height={1000}
+							className="w-[40px] h-[40px]"
+						/>
+						<p className="text-sm font-medium italic leading-relaxed">
+							<span className="text-blue-400">
+								Mode of Study:{" "}
+							</span>
+							{details.modeOfStudy}
+						</p>
+					</div>
+					<div className="flex items-center justify-start gap-4">
+						<Image
+							src={"/assets/icons/graduation-cap.svg"}
+							alt={`Graduation Cap Icon`}
+							width={1000}
+							height={1000}
+							className="w-[40px] h-[40px]"
+						/>
+						<p className="text-sm font-medium italic leading-relaxed">
+							<span className="text-blue-400">
+								Certification:{" "}
+							</span>
+							{details.certification}
+						</p>
+					</div>
+					<div className="flex items-center justify-start gap-4">
+						<Image
+							src={"/assets/icons/scroll.svg"}
+							alt={`Scroll Icon`}
+							width={1000}
+							height={1000}
+							className="w-[40px] h-[40px]"
+						/>
+						<p className="text-sm font-medium italic leading-relaxed">
+							<span className="text-blue-400">
+								Course Level:{" "}
+							</span>
+							Beginner to Advanced
+						</p>
+					</div>
+					<div className="flex items-center justify-start gap-4">
+						<Image
+							src={"/assets/icons/money-bag.svg"}
+							alt={`Money Bag Icon`}
+							width={1000}
+							height={1000}
+							className="w-[40px] h-[40px]"
+						/>
+						<p className="text-sm font-medium italic leading-relaxed">
+							<span className="text-blue-400">
+								Tuition Fees:{" "}
+							</span>
+							{details.tuitionFees}
+						</p>
+					</div>
 				</div>
 			</div>
 			<Separator className="my-10 container" />
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-4 container">
-				<div className="flex flex-col items-start justify-center">
+			<div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-4 container">
+				<div className="col-span-2 flex flex-col items-start justify-center">
 					<div>
 						<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed mb-2">
 							Who Should Take This Course?🎯
@@ -60,34 +114,41 @@ const CourseDetails = () => {
 							className={`leading-loose text-sm lg:text-base lg:leading-loose`}
 						>
 							This program is ideal for professionals looking to
-							advance their career in forensic auditing, financial
-							crime investigation, and corporate fraud prevention.
+							advance their career in {details.audience}
 						</p>
 					</div>
 					<div className="mt-8 grid gap-8">
-						{courseAudience.map(({ name, details }, index) => (
-							<div
-								key={index}
-								className="flex items-start justify-start gap-2"
-							>
-								<Image
-									src={"/assets/icons/check-black.svg"}
-									alt={`Check icon`}
-									width={1000}
-									height={1000}
-									className="w-[20px] h-[20px]"
-								/>
-								<p className="text-sm font-medium italic leading-relaxed">
-									<span className="text-blue-400">
-										{name}:{" "}
-									</span>
-									{details}
-								</p>
-							</div>
-						))}
+						{details.courseAudience.map(
+							(
+								{
+									name,
+									details,
+								}: { name: string; details: string },
+								index: string
+							) => (
+								<div
+									key={index}
+									className="flex items-start justify-start gap-2"
+								>
+									<Image
+										src={"/assets/icons/check-black.svg"}
+										alt={`Check icon`}
+										width={1000}
+										height={1000}
+										className="w-[20px] h-[20px]"
+									/>
+									<p className="text-sm font-medium italic leading-relaxed">
+										<span className="text-blue-400">
+											{name}:{" "}
+										</span>
+										{details}
+									</p>
+								</div>
+							)
+						)}
 					</div>
 				</div>
-				<CourseAudiences />
+				<CourseAudiences images={details.courseAudienceImages} />
 			</div>
 			<Separator className="my-10 container" />
 			<div className="container">
@@ -101,30 +162,38 @@ const CourseDetails = () => {
 					topics in fraud auditing and forensic accounting.
 				</p>
 				<div className="mt-8 grid gap-8">
-					{courseCurriculum.map(({ module, details }, index) => (
-						<div
-							key={index}
-							className="flex items-start justify-start gap-2"
-						>
-							<Image
-								src={"/assets/icons/check-black.svg"}
-								alt={`Check icon`}
-								width={1000}
-								height={1000}
-								className="w-[20px] h-[20px]"
-							/>
-							<p className="text-sm font-medium italic leading-relaxed">
-								<span className="text-blue-400">
-									Module {module}:{" "}
-								</span>
-								{details}
-							</p>
-						</div>
-					))}
+					{details.modules.map(
+						(
+							{
+								module,
+								details,
+							}: { module: string; details: string },
+							index: string
+						) => (
+							<div
+								key={index}
+								className="flex items-start justify-start gap-2"
+							>
+								<Image
+									src={"/assets/icons/check-black.svg"}
+									alt={`Check icon`}
+									width={1000}
+									height={1000}
+									className="w-[20px] h-[20px]"
+								/>
+								<p className="text-sm font-medium italic leading-relaxed">
+									<span className="text-blue-400">
+										Module {module}:{" "}
+									</span>
+									{details}
+								</p>
+							</div>
+						)
+					)}
 				</div>
 			</div>
 			<Separator className="my-10 container" />
-			<CourseTuition />
+			<CourseTuition tuitionFees={details.tuitionFees} />
 			<Separator className="container my-10" />
 			<div className="container">
 				<h2 className="text-blue-400 font-semibold leading-relaxed text-2xl lg:text-3xl lg:leading-relaxed mb-2">

@@ -97,63 +97,6 @@ export const aboutHighlights = [
 	},
 ];
 
-export const ourPrograms = [
-	{
-		icon: "/assets/icons/justice-scale.svg",
-		title: "Investigation Law (IL)",
-		description:
-			"Understand legal frameworks for forensic investigations, search warrants, evidence handling, and court procedures",
-		audience: "Lawyers, legal professionals, forensic investigators.",
-		deliveryMode: "Online (Moodel LMS)",
-		duration: "90 Days",
-	},
-	{
-		icon: "/assets/icons/justice-scale.svg",
-		title: "Investigation Law (IL)",
-		description:
-			"Understand legal frameworks for forensic investigations, search warrants, evidence handling, and court procedures",
-		audience: "Lawyers, legal professionals, forensic investigators.",
-		deliveryMode: "Online (Moodel LMS)",
-		duration: "90 Days",
-	},
-	{
-		icon: "/assets/icons/justice-scale.svg",
-		title: "Investigation Law (IL)",
-		description:
-			"Understand legal frameworks for forensic investigations, search warrants, evidence handling, and court procedures",
-		audience: "Lawyers, legal professionals, forensic investigators.",
-		deliveryMode: "Online (Moodel LMS)",
-		duration: "90 Days",
-	},
-	{
-		icon: "/assets/icons/justice-scale.svg",
-		title: "Investigation Law (IL)",
-		description:
-			"Understand legal frameworks for forensic investigations, search warrants, evidence handling, and court procedures",
-		audience: "Lawyers, legal professionals, forensic investigators.",
-		deliveryMode: "Online (Moodel LMS)",
-		duration: "90 Days",
-	},
-	{
-		icon: "/assets/icons/justice-scale.svg",
-		title: "Investigation Law (IL)",
-		description:
-			"Understand legal frameworks for forensic investigations, search warrants, evidence handling, and court procedures",
-		audience: "Lawyers, legal professionals, forensic investigators.",
-		deliveryMode: "Online (Moodel LMS)",
-		duration: "90 Days",
-	},
-	{
-		icon: "/assets/icons/justice-scale.svg",
-		title: "Investigation Law (IL)",
-		description:
-			"Understand legal frameworks for forensic investigations, search warrants, evidence handling, and court procedures",
-		audience: "Lawyers, legal professionals, forensic investigators.",
-		deliveryMode: "Online (Moodel LMS)",
-		duration: "90 Days",
-	},
-];
-
 export const testimonies = [
 	{
 		name: "Tomiwa Adelae",

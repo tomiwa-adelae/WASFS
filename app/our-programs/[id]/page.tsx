@@ -6,6 +6,8 @@ import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
 import type { Metadata } from "next";
+import { ourPrograms } from "@/constants/Programs";
+import React, { Fragment } from "react";
 
 export const metadata: Metadata = {
 	title: "Accredited Forensic Certification | WASFS",
@@ -16,16 +18,21 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
+	const program = ourPrograms[0];
 	return (
 		<div>
 			<Showcase
 				title={
 					<>
-						Fraud Auditing & Forensic Accounting{" "}
-						<span className="text-primary">(FAFA)</span>
+						{program.title}{" "}
+						<span className="text-primary">
+							({program.abbreviation})
+						</span>
 					</>
 				}
-				description="Master forensic accounting techniques to detect, investigate, and prevent financial fraud. Learn from industry experts and gain a globally recognized certification."
+				description={
+					<p className="line-clamp-3">{program.description}</p>
+				}
 				buttons={
 					<>
 						<Button
@@ -37,9 +44,9 @@ const page = () => {
 						</Button>
 					</>
 				}
-				image="/assets/images/magnifying-glass.jpg"
+				image={program.image}
 			/>
-			<CourseDetails />
+			<CourseDetails details={program} />
 			<Separator className="container" />
 			<FAQs />
 		</div>

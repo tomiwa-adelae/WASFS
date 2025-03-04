@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Separator } from "./ui/separator";
 
-const CourseTuition = () => {
+const CourseTuition = ({ tuitionFees }: any) => {
 	return (
 		<div>
 			{/* <Separator className="my-10 container" /> */}
@@ -18,7 +18,7 @@ const CourseTuition = () => {
 					to everyone. Choose a payment plan that fits your budget and
 					start learning today.
 				</p>
-				<div className="mt-8 uppercase text-primary flex items-center justify-start gap-2 font-semibold text-lg">
+				<div className="mt-8 uppercase text-primary flex items-center justify-start gap-2 font-semibold text-base">
 					<Image
 						src={"/assets/icons/pin.svg"}
 						alt={`Pin icon`}
@@ -26,7 +26,10 @@ const CourseTuition = () => {
 						height={1000}
 						className="w-[22px] h-[22px]"
 					/>
-					<h3>Course Fee: $500</h3>
+					<h3>
+						Course Fee: ${tuitionFees} (Includes all materials,
+						assessments & certification)
+					</h3>
 				</div>
 				<Separator className="my-10" />
 				<div className="mt-8 uppercase text-blue-400 flex items-center justify-start gap-2 font-semibold text-lg">
@@ -40,23 +43,31 @@ const CourseTuition = () => {
 					<h3>Payment options:</h3>
 				</div>
 				<div className="mt-8 grid gap-8">
-					{coursePaymentOptions.map((option, index) => (
-						<div
-							key={index}
-							className="flex items-start justify-start gap-2"
-						>
-							<Image
-								src={"/assets/icons/check-black.svg"}
-								alt={`Check icon`}
-								width={1000}
-								height={1000}
-								className="w-[20px] h-[20px]"
-							/>
-							<p className="text-sm font-medium italic leading-relaxed">
-								{option}
-							</p>
-						</div>
-					))}
+					<div className="flex items-start justify-start gap-2">
+						<Image
+							src={"/assets/icons/check-black.svg"}
+							alt={`Check icon`}
+							width={1000}
+							height={1000}
+							className="w-[20px] h-[20px]"
+						/>
+						<p className="text-sm font-medium italic leading-relaxed">
+							One-time full payment (${tuitionFees})
+						</p>
+					</div>
+					<div className="flex items-start justify-start gap-2">
+						<Image
+							src={"/assets/icons/check-black.svg"}
+							alt={`Check icon`}
+							width={1000}
+							height={1000}
+							className="w-[20px] h-[20px]"
+						/>
+						<p className="text-sm font-medium italic leading-relaxed">
+							Installment Plan: ${tuitionFees / 2} upfront + 2
+							monthly payments of ${tuitionFees / 4}
+						</p>
+					</div>
 				</div>
 				<p className="italic text-sm mt-8 text-primary">
 					🔔 Note: Installment plans must be completed before

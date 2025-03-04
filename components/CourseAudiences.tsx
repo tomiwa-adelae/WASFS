@@ -4,21 +4,7 @@ import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-export function CourseAudiences() {
-	const images = [
-		{
-			src: "/assets/images/fingerprints.jpg",
-			alt: "A picture a number of fingerprints on a paper",
-		},
-		{
-			src: "/assets/images/phone-laptop-data.jpg",
-			alt: "A picture of a phone over a laptop checking financial data and projections",
-		},
-		{
-			src: "/assets/images/investigation-law-img.jpg",
-			alt: "A picture of an investigation with fingerprints and evidences",
-		},
-	];
+export function CourseAudiences({ images }: any) {
 	const [open, setOpen] = React.useState(false);
 	const [currentIndex, setCurrentIndex] = React.useState(0);
 
@@ -28,7 +14,7 @@ export function CourseAudiences() {
 	};
 
 	return (
-		<div>
+		<div className="col-span-2 md:col-span-1">
 			<div className="grid grid-cols-4 grid-rows-2 gap-4">
 				{images.map(
 					(
