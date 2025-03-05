@@ -17,22 +17,20 @@ export const metadata: Metadata = {
 		"forensic certification, forensic accounting diploma, fraud auditing course, cybercrime investigation certification, forensic investigation training, wasfs, prof akinteye ademola, ademola, akinteye, simon akinteye, about",
 };
 
-const page = () => {
-	const program = ourPrograms[0];
+const page = ({ params: { id } }: { params: { id: number } }) => {
+	const program = ourPrograms[id];
 	return (
 		<div>
 			<Showcase
 				title={
 					<>
-						{program.title}{" "}
+						{program?.title}{" "}
 						<span className="text-primary">
-							({program.abbreviation})
+							({program?.abbreviation})
 						</span>
 					</>
 				}
-				description={
-					<p className="line-clamp-3">{program.description}</p>
-				}
+				description={<p>{program?.description}</p>}
 				buttons={
 					<>
 						<Button
@@ -44,7 +42,7 @@ const page = () => {
 						</Button>
 					</>
 				}
-				image={program.image}
+				image={program?.image}
 			/>
 			<CourseDetails details={program} />
 			<Separator className="container" />

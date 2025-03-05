@@ -31,7 +31,7 @@ const Programs = () => {
 									/>
 									<div>
 										<Link
-											href="/our-programs/12345"
+											href={`/our-programs/${index}`}
 											className="text-blue-400 uppercase text-base font-semibold hover:text-primary transition-all"
 										>
 											{title}
