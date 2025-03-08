@@ -24,7 +24,7 @@ const FAQs = () => {
 							<AccordionItem value={`${index}`} key={index}>
 								<AccordionTrigger>{question}</AccordionTrigger>
 								<AccordionContent>
-									{answer} to the WAI-ARIA design pattern.
+									{answer}
 								</AccordionContent>
 							</AccordionItem>
 						))}
