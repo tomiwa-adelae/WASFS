@@ -1,5 +1,6 @@
 export const ourPrograms = [
 	{
+		id: 1,
 		category: "Certifications & Programs",
 		icon: "/assets/icons/justice-scale.svg",
 		title: "Certification in Principles and Practice of Accounting",
@@ -111,6 +112,7 @@ export const ourPrograms = [
 		],
 	},
 	{
+		id: 2,
 		category: "Certifications & Programs",
 		icon: "/assets/icons/binary.svg",
 		title: "Executive Certification in Computer and Digital Forensics",
@@ -233,6 +235,7 @@ export const ourPrograms = [
 		],
 	},
 	{
+		id: 3,
 		category: "Executive Certifications",
 		icon: "/assets/icons/magnifying-glasses.svg",
 		title: "Executive Certification in Fraud Auditing and Forensic Accounting",
@@ -409,6 +412,7 @@ export const ourPrograms = [
 		],
 	},
 	{
+		id: 4,
 		category: "Executive Certifications",
 		icon: "/assets/icons/investigation-law.svg",
 		title: "Executive Certification in Investigation Law",

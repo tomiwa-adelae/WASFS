@@ -42,7 +42,7 @@ const Programs = () => {
 									{description}
 								</p>
 								<Button className="w-full" size={"lg"} asChild>
-									<Link href="/our-programs/12345">
+									<Link href={`/our-programs/${index}`}>
 										Learn more
 									</Link>
 								</Button>

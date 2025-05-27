@@ -38,7 +38,7 @@ const CourseDetails = ({ details }: any) => {
 						/>
 						<p className="text-sm font-medium italic leading-relaxed">
 							<span className="text-blue-400">Duration: </span>
-							{details.duration}
+							{details?.duration}
 						</p>
 					</div>
 					<div className="flex items-center justify-start gap-4">
